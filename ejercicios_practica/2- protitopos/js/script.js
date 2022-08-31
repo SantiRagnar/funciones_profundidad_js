@@ -56,6 +56,11 @@ const data = [
 
 */
 
+function Post(titulo, avatar, texto){
+  this.titulo = titulo;
+  this.avatar = avatar;
+  this.texto = texto
+}
 
 
 /*
@@ -65,4 +70,11 @@ const data = [
 --> Almacene el objeto generado dentro de una lista "posts"
 
 */
+const posts = []
+const obj = new Post('titulo', 'avatar', 'texto')
 
+for (let post of data){
+  posts.push(post)
+}
+
+console.log(posts)
